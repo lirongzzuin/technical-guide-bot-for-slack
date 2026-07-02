@@ -1,0 +1,4 @@
+name = "shoplinker-bot"
+main = "index.js"
+compatibility_date = "2025-05-01"
+compatibility_flags = ["nodejs_compat"]

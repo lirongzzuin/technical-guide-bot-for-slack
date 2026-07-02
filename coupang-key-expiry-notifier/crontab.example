@@ -1,0 +1,5 @@
+# 매일 09:10 KST 일일 체크
+10 9 * * * cd /opt/coupang-key-expiry-notifier && /usr/bin/python3 -m app.check >> ./data/check.log
+
+# 매시간 연동 이벤트 수집 (감지 소스 확정 후 빈도 조정)
+0 * * * * cd /opt/coupang-key-expiry-notifier && /usr/bin/python3 -m app.ingest >> ./data/ingest.log

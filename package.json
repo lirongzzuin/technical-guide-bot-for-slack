@@ -1,0 +1,16 @@
+{
+  "name": "techguide-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node test/local.js",
+    "build-sellers": "node scripts/build-seller-guides.js",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3",
+    "xlsx": "^0.18.5"
+  }
+}
