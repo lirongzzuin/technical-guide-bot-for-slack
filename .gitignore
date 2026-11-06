@@ -1,11 +1,16 @@
 node_modules/
 .wrangler/
+.dev.vars
 
 # 임시 Office 잠금 파일
 ~$*
 
 # OS / IDE
 .DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.claude/
 
 # Python
 __pycache__/
@@ -14,12 +19,17 @@ __pycache__/
 .venv/
 venv/
 
-# env
+# 비밀값 (예시 파일 제외)
 .env
-.env.local
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
 
-# 런타임 데이터 (SQLite 등)
-coupang-key-expiry-notifier/data/notifier.db
+# 로그 / 런타임 데이터 (SQLite 등)
+*.log
+coupang-key-expiry-notifier/data/*.db
 coupang-key-expiry-notifier/data/*.db-journal
 coupang-key-expiry-notifier/data/*.db-wal
 coupang-key-expiry-notifier/data/*.db-shm
